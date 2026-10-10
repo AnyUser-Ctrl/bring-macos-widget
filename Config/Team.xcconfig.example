@@ -1,0 +1,5 @@
+// Copy to Config/Team.xcconfig and put in your own 10-character Apple Team ID.
+// Find it with:
+//   security find-certificate -c "Apple Development" -p | openssl x509 -noout -subject
+// (the value after OU=)
+DEVELOPMENT_TEAM = ABCDE12345

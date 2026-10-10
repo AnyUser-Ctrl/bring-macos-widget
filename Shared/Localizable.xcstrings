@@ -1,0 +1,401 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld items": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld item"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld items"
+                }
+              }
+            }
+          }
+        },
+        "de": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld Artikel"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld Artikel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld · %@": {
+      "shouldTranslate": false
+    },
+    "Bring Widget": {
+      "shouldTranslate": false
+    },
+    "Bring!": {
+      "shouldTranslate": false
+    },
+    "Bring! Shopping List": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bring!-Einkaufsliste"
+          }
+        }
+      }
+    },
+    "Bring! Widget": {
+      "shouldTranslate": false
+    },
+    "Bring! responded with status %lld.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bring! antwortete mit Status %lld."
+          }
+        }
+      }
+    },
+    "Bring! responded with status %lld: %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bring! antwortete mit Status %lld: %@"
+          }
+        }
+      }
+    },
+    "Choose a list above to see a preview.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle oben eine Liste, um eine Vorschau zu sehen."
+          }
+        }
+      }
+    },
+    "Choose a list in the app.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle in der App eine Liste aus."
+          }
+        }
+      }
+    },
+    "Could not read the response: %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antwort konnte nicht verarbeitet werden: %@"
+          }
+        }
+      }
+    },
+    "Email": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E-Mail"
+          }
+        }
+      }
+    },
+    "Email and password are stored in plain text in the App Group container so the app and the widget can sign in again automatically when tokens expire. Intended for personal use on your own Mac only.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "E-Mail und Passwort werden im Klartext im App-Group-Container abgelegt, damit sich die App und das Widget bei abgelaufenen Tokens automatisch neu anmelden können. Nur für den privaten Gebrauch auf deinem eigenen Mac gedacht."
+          }
+        }
+      }
+    },
+    "Fetches the selected Bring! list directly from api.getbring.com and re-renders the widget.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Holt die ausgewählte Bring!-Liste direkt von api.getbring.com und aktualisiert das Widget."
+          }
+        }
+      }
+    },
+    "List": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste"
+          }
+        }
+      }
+    },
+    "List for the Widget": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste fürs Widget"
+          }
+        }
+      }
+    },
+    "List is empty": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste ist leer"
+          }
+        }
+      }
+    },
+    "Loading…": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lädt …"
+          }
+        }
+      }
+    },
+    "Network error: %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Netzwerkfehler: %@"
+          }
+        }
+      }
+    },
+    "No List": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine Liste"
+          }
+        }
+      }
+    },
+    "No List Selected": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keine Liste gewählt"
+          }
+        }
+      }
+    },
+    "Not Signed In": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht angemeldet"
+          }
+        }
+      }
+    },
+    "Not signed in.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht angemeldet."
+          }
+        }
+      }
+    },
+    "Open the Bring Widget app and sign in.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffne die Bring-Widget-App und melde dich an."
+          }
+        }
+      }
+    },
+    "Password": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passwort"
+          }
+        }
+      }
+    },
+    "Preview": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorschau"
+          }
+        }
+      }
+    },
+    "Refresh Bring! List": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bring!-Liste aktualisieren"
+          }
+        }
+      }
+    },
+    "Refresh Widget": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Widget aktualisieren"
+          }
+        }
+      }
+    },
+    "Shopping List": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einkaufsliste"
+          }
+        }
+      }
+    },
+    "Shows your selected Bring! list. Click to open web.getbring.com.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeigt deine ausgewählte Bring!-Liste. Klick öffnet web.getbring.com."
+          }
+        }
+      }
+    },
+    "Sign In": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anmelden"
+          }
+        }
+      }
+    },
+    "Sign Out": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abmelden"
+          }
+        }
+      }
+    },
+    "Sign in with your Bring! account": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit deinem Bring!-Account anmelden"
+          }
+        }
+      }
+    },
+    "Sign-in failed — wrong email or password.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anmeldung fehlgeschlagen — E-Mail oder Passwort falsch."
+          }
+        }
+      }
+    },
+    "This list is empty.": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Liste ist leer."
+          }
+        }
+      }
+    },
+    "Try Again": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erneut versuchen"
+          }
+        }
+      }
+    },
+    "as of %@": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stand %@"
+          }
+        }
+      }
+    },
+    "organic": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bio"
+          }
+        }
+      }
+    },
+    "whole grain": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vollkorn"
+          }
+        }
+      }
+    },
+    "· %@": {
+      "shouldTranslate": false
+    }
+  },
+  "version": "1.0"
+}

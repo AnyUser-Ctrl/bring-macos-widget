@@ -1,0 +1,85 @@
+name: BringWidget
+options:
+  bundleIdPrefix: com.AnyUser-Ctrl
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  generateEmptyDirectories: true
+
+# DEVELOPMENT_TEAM comes from Config/Team.xcconfig (gitignored, one line,
+# see Config/Team.xcconfig.example) so no personal Team ID is committed.
+configFiles:
+  Debug: Config/Signing.xcconfig
+  Release: Config/Signing.xcconfig
+
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    # Manual signing WITHOUT a provisioning profile. A free Personal Team
+    # profile expires after 7 days, and once it does macOS kills the app and
+    # the widget extension at launch. Without a profile Xcode adds no
+    # restricted entitlements, so the build only depends on the Apple
+    # Development certificate (renew + rebuild yearly). This requires the
+    # Team-ID-prefixed App Group below; an iOS-style "group." ID would need
+    # a profile.
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "Apple Development"
+    PROVISIONING_PROFILE_SPECIFIER: ""
+    # Single source for the App Group: expanded into both .entitlements files
+    # and into both Info.plists (key BringAppGroup, read by BringStore).
+    BRING_APP_GROUP: "$(DEVELOPMENT_TEAM).com.AnyUser-Ctrl.BringWidget"
+    ENABLE_HARDENED_RUNTIME: YES
+    GENERATE_INFOPLIST_FILE: NO
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "2"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    # Keep Shared/Localizable.xcstrings in sync with the strings in code.
+    SWIFT_EMIT_LOC_STRINGS: YES
+    LOCALIZATION_PREFERS_STRING_CATALOGS: YES
+    DEAD_CODE_STRIPPING: YES
+
+targets:
+  BringWidget:
+    type: application
+    platform: macOS
+    sources:
+      - path: App
+      - path: Shared
+      - path: Assets.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.AnyUser-Ctrl.BringWidget
+        PRODUCT_NAME: BringWidget
+        INFOPLIST_FILE: App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: App/BringWidget.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/../Frameworks"
+    dependencies:
+      - target: BringWidgetExtension
+        embed: true
+        codeSign: true
+
+  BringWidgetExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: Widget
+      - path: Shared
+      # The token color sets must also be in the extension bundle, otherwise
+      # Color("…", bundle: .main) does not resolve in the widget at runtime.
+      - path: Assets.xcassets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.AnyUser-Ctrl.BringWidget.WidgetExtension
+        PRODUCT_NAME: BringWidgetExtension
+        INFOPLIST_FILE: Widget/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Widget/BringWidgetExtension.entitlements
+        ENABLE_PREVIEWS: YES
+        SKIP_INSTALL: YES
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/../../../../Frameworks"

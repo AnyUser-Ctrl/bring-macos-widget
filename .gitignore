@@ -1,0 +1,33 @@
+## XcodeGen generates this:
+BringWidget.xcodeproj/
+
+## Xcode user data
+xcuserdata/
+*.xcworkspace/
+DerivedData/
+build/
+
+## macOS
+.DS_Store
+
+## Swift Package Manager
+.swiftpm/
+.build/
+Packages/
+
+## Plans / agent artifacts not part of the repo
+.claude/
+
+## Distribution binaries — regenerate with scripts/package.sh
+dist/*.zip
+dist/*.dmg
+.vibe-setup/
+
+## Penpot MCP bridge — contains a paired userToken (secret)
+.mcp.json
+
+## iCloud exclusion: *.nosync folders are never synced or versioned
+*.nosync/
+
+## Personal Apple Team ID (see Config/Team.xcconfig.example)
+Config/Team.xcconfig

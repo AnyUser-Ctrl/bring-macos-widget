@@ -1,0 +1,3 @@
+// Loads the personal Apple Team ID from Config/Team.xcconfig, which is
+// gitignored. Create it from Config/Team.xcconfig.example (one line).
+#include? "Team.xcconfig"
