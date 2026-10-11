@@ -23,7 +23,7 @@
     <key>LSApplicationCategoryType</key>
     <string>public.app-category.productivity</string>
     <key>NSHumanReadableCopyright</key>
-    <string>Copyright © 2026 AnyUser-Ctrl. MIT License.</string>
+    <string>Copyright © 2026 AnyUser-Ctrl. Licensed under GPL-3.0.</string>
     <!-- Run as an "agent" app: no Dock icon, no Cmd-Tab entry, no menu
          bar presence. The container app only exists to back the widget
          extension; the user activates it through Spotlight or `open -a`

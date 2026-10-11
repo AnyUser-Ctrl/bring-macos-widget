@@ -145,4 +145,8 @@ but may change at any time.
 
 ## License
 
-[MIT](LICENSE)
+[GPL-3.0](LICENSE) © 2026 AnyUser-Ctrl
+
+You may use, change and share this project — also commercially — as long
+as you pass it on under the same license, including the full source code.
+Closed-source or proprietary versions are not allowed.
